@@ -74,7 +74,7 @@ class BaseChecker(
         status: checklib.status.Status,
         public: str = "",
         private: typing.Optional[str] = None,
-    ):
+    ) -> typing.NoReturn:
         if private is None:
             private = public
 
